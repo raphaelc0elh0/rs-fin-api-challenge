@@ -33,8 +33,6 @@ describe("AuthenticateUserUseCase", () => {
   });
 
   it("should not be able to authenticate user if not an user", async () => {
-    expect.assertions(1);
-
     try {
       await authenticateUserUseCase.execute({
         email: "notanuser@email.com",
@@ -46,8 +44,6 @@ describe("AuthenticateUserUseCase", () => {
   });
 
   it("should not be able to authenticate user if password does not match", async () => {
-    expect.assertions(1);
-
     await createUserUseCase.execute({
       ...mockedUser,
       name: "Test User",

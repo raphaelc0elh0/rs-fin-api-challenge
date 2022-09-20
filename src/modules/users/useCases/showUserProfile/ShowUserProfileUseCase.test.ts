@@ -23,8 +23,6 @@ describe("AuthenticateUserUseCase", () => {
   });
 
   it("should be able to return user", async () => {
-    expect.assertions(1);
-
     const createdUser = await createUserUseCase.execute({
       ...mockedUser,
       name: "Test User",
@@ -37,7 +35,6 @@ describe("AuthenticateUserUseCase", () => {
   });
 
   it("should not be able to return user if not found", async () => {
-    expect.assertions(1);
     try {
       await showUserProfileUseCase.execute("id");
     } catch (error) {

@@ -47,8 +47,6 @@ describe("CreateUserUseCase", () => {
   });
 
   it("should not be able to create user with same email", async () => {
-    expect.assertions(1);
-
     try {
       await createUserUseCase.execute(mockedUser);
       await createUserUseCase.execute(mockedUser);
