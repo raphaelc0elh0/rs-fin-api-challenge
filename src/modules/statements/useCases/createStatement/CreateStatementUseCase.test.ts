@@ -19,7 +19,7 @@ const mockedStatement = {
   description: "Test Description",
 };
 
-describe("AuthenticateUserUseCase", () => {
+describe("CreateStatementUseCase", () => {
   beforeEach(async () => {
     inMemoryUsersRepository = new InMemoryUsersRepository();
     inMemoryStatementsRepository = new InMemoryStatementsRepository();

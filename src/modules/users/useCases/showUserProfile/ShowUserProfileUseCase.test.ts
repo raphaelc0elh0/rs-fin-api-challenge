@@ -13,7 +13,7 @@ const mockedUser = {
   password: "Test Password",
 };
 
-describe("AuthenticateUserUseCase", () => {
+describe("ShowUserProfileUseCase", () => {
   beforeEach(() => {
     inMemoryUsersRepository = new InMemoryUsersRepository();
     showUserProfileUseCase = new ShowUserProfileUseCase(

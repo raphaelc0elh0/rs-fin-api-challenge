@@ -12,7 +12,7 @@ let inMemoryStatementsRepository: InMemoryStatementsRepository;
 
 let user: User;
 
-describe("AuthenticateUserUseCase", () => {
+describe("GetBalanceUseCase", () => {
   beforeEach(async () => {
     inMemoryUsersRepository = new InMemoryUsersRepository();
     inMemoryStatementsRepository = new InMemoryStatementsRepository();
